@@ -1,0 +1,11 @@
+severity,check,rows_affected,finding,examples
+critical,duplicated CBP sequences,251,"372 records sit in runs of 3+ consecutive records whose three CBP values exactly repeat a run at other dates (longest run 89 records). HHS stock-flow evidence labels 251 as suspected displaced copies, 121 as likely originals and 0 unresolved. Suspect copies span 2023-01-12 to 2024-01-30. Attribution threshold 45.0 (P95 of |HHS residual| on 270 non-duplicated one-day records).","2023-01-12, 2023-01-22, 2023-01-23, 2023-01-24, 2023-01-25, 2023-01-29"
+warning,reporting frequency,355,"720 reporting dates cover 1075 calendar days (67%); 355 calendar days have no record. Reports fall on Sunday (130), Monday (145), Tuesday (149), Wednesday (147), Thursday (147), Friday (2). Missing days are not treated as zero activity.",
+warning,coverage gaps,6,6 gaps of 5+ days between reports (longest 10 days).,"2023-01-22, 2023-03-07, 2023-08-16, 2024-08-27, 2025-05-27, 2025-06-17"
+warning,possible carry-forward,5,5 records repeat the previous report's HHS care and discharge values exactly (possible stale snapshot).,"2024-01-08, 2024-02-26, 2024-06-25, 2025-03-27, 2025-05-14"
+info,schema,0,Header(s) carry footnote markers whose footnote text is not included in the file: Children apprehended and placed in CBP custody*. Column definitions cannot be confirmed from the file.,
+info,blank rows,450,450 fully blank rows were dropped; they carry no observation (cross-check against the source to see whether records were removed).,
+info,ordering,0,File is ordered descending (newest first); records were sorted chronologically.,
+info,coincidental matches,2,2 records match another date on CBP values only as isolated short runs; treated as coincidence and kept.,
+info,stock-flow reconciliation,0,"On one-day gaps without suspect values, HHS care reconciles closely (median |residual| 6.0); CBP custody does not (median |residual| 18.0, mean +32.5), indicating undocumented CBP exits, entries or snapshot-timing differences.",
+info,transfer plausibility,3,3 one-day records report more transfers than the previous custody snapshot plus same-day intake (timing differences).,"2023-02-08, 2023-06-21, 2023-11-01"

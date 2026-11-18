@@ -1,0 +1,17 @@
+length,a_start,a_end,b_start,b_end,a_median_abs_hhs_residual,b_median_abs_hhs_residual,a_status,b_status
+89,2023-02-08,2023-06-20,2023-06-21,2023-10-31,144.0,221.0,suspect_copy,suspect_copy
+89,2023-02-08,2023-06-20,2024-09-19,2025-01-27,144.0,9.0,suspect_copy,likely_original
+89,2023-06-21,2023-10-31,2024-09-19,2025-01-27,221.0,9.0,suspect_copy,likely_original
+20,2023-11-01,2023-11-30,2023-12-03,2024-01-01,249.0,256.0,suspect_copy,suspect_copy
+16,2023-11-01,2023-11-26,2024-06-26,2024-07-21,240.0,12.0,suspect_copy,likely_original
+16,2023-12-03,2023-12-25,2024-06-26,2024-07-21,250.5,12.0,suspect_copy,likely_original
+14,2023-12-26,2024-01-16,2025-01-09,2025-01-28,150.0,6.0,suspect_copy,likely_original
+13,2023-01-12,2023-02-07,2025-01-27,2025-02-12,300.0,3.0,suspect_copy,likely_original
+13,2023-06-01,2023-06-20,2023-12-26,2024-01-15,83.0,137.5,suspect_copy,suspect_copy
+13,2023-10-15,2023-10-31,2023-12-26,2024-01-15,197.5,137.5,suspect_copy,suspect_copy
+10,2024-01-17,2024-01-30,2024-07-11,2024-07-25,125.0,12.5,suspect_copy,likely_original
+6,2023-11-16,2023-11-26,2024-01-17,2024-01-24,249.0,150.0,suspect_copy,suspect_copy
+6,2023-12-17,2023-12-25,2024-01-17,2024-01-24,256.5,150.0,suspect_copy,suspect_copy
+4,2023-06-01,2023-06-06,2023-11-27,2023-11-30,79.0,361.0,suspect_copy,suspect_copy
+4,2023-10-15,2023-10-18,2023-11-27,2023-11-30,214.0,361.0,suspect_copy,suspect_copy
+4,2023-11-27,2023-11-30,2025-01-09,2025-01-14,361.0,6.0,suspect_copy,likely_original

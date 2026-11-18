@@ -1,0 +1,13 @@
+setting,value,is_default,rule,episodes,days_flagged,longest_start,longest_end,longest_days
+Low-discharge threshold (% of prior-history DSR),30.0,False,LOW_DISCHARGE_ACTIVITY,2,265,2025-07-27,2025-12-21,148
+Low-discharge threshold (% of prior-history DSR),40.0,False,LOW_DISCHARGE_ACTIVITY,1,285,2025-03-12,2025-12-21,285
+Low-discharge threshold (% of prior-history DSR),50.0,True,LOW_DISCHARGE_ACTIVITY,1,291,2025-03-06,2025-12-21,291
+Low-discharge threshold (% of prior-history DSR),60.0,False,LOW_DISCHARGE_ACTIVITY,1,294,2025-03-03,2025-12-21,294
+Low-discharge threshold (% of prior-history DSR),70.0,False,LOW_DISCHARGE_ACTIVITY,1,295,2025-03-02,2025-12-21,295
+Detection window (days),14.0,False,LOW_DISCHARGE_ACTIVITY,1,302,2025-02-23,2025-12-21,302
+Detection window (days),28.0,True,LOW_DISCHARGE_ACTIVITY,1,291,2025-03-06,2025-12-21,291
+Detection window (days),56.0,False,LOW_DISCHARGE_ACTIVITY,1,270,2025-03-27,2025-12-21,270
+HHS growth threshold (%),1.0,False,HHS_STOCK_GROWTH,13,503,2025-09-08,2025-12-21,105
+HHS growth threshold (%),3.0,True,HHS_STOCK_GROWTH,13,431,2023-07-09,2023-10-09,93
+HHS growth threshold (%),5.0,False,HHS_STOCK_GROWTH,13,325,2023-07-10,2023-09-28,81
+HHS growth threshold (%),10.0,False,HHS_STOCK_GROWTH,6,129,2023-07-17,2023-09-19,65

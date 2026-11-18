@@ -1,0 +1,9 @@
+pandas>=2.1
+numpy>=1.26
+scipy>=1.11
+plotly>=6.1
+streamlit>=1.45
+kaleido>=1.0    # static PNG export in scripts/run_analysis.py only
+markdown-it-py>=3.0    # research paper build only
+PyMuPDF>=1.24    # research paper build and checks only
+pytest>=8.0

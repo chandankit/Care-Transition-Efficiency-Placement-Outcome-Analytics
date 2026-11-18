@@ -1,0 +1,9 @@
+step,decision,rows_affected,rationale
+load,Read 1379 data rows from C:\Users\Abhisek Chand\ANKIT\PYTHON_ALL_CONCEPTS\UnifiedMentor Internship_October 2026\Care Transition Efficiency & Placement Outcome Analytics\uac-care-pipeline-analytics\data\reference\ehpz-xc9n_export_2026-10-29.csv,1379,Raw values kept as text for traceability (source_row = file line number).
+schema,Mapped headers to standard names: date <- 'Date'; cbp_intake <- 'Children apprehended and placed in CBP custody*'; cbp_custody <- 'Children in CBP custody'; cbp_transfers_out <- 'Children transferred out of CBP custody'; hhs_care <- 'Children in HHS Care'; hhs_discharges <- 'Children discharged from HHS Care',0,Original headers preserved in column_map.
+parse values,Removed thousands separators and converted counts to numbers,0,"HHS care values are formatted like '2,484'."
+analysis window,Dropped records dated before 2023-01-12,450,Analysis window chosen by the user; earlier records are not analysed.
+ordering,Sorted chronologically (file was descending (newest first)),929,Time-series operations need ascending order.
+screening,"CBP values set to missing in screened view (suspected displaced copies, unresolved duplicates, possible carry-forward)",0,Exact multi-record repeats of CBP values whose transfers do not reconcile with HHS stock changes at their reported dates. HHS values on these rows are kept.
+screening,HHS values set to missing in screened view (possible carry-forward),7,Stock and discharges identical to the previous report suggest a stale snapshot.
+missing days,No calendar days were added or zero-filled,456,There is no evidence that unreported days had zero activity.

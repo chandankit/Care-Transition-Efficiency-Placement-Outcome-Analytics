@@ -1,0 +1,11 @@
+severity,check,rows_affected,finding,examples
+warning,missing values,251,CBP intake (apprehended & placed in CBP custody): 251 missing values (kept as missing).,"2023-01-12, 2023-01-22, 2023-01-23, 2023-01-24, 2023-01-25, 2023-01-29"
+warning,missing values,251,Children in CBP custody: 251 missing values (kept as missing).,"2023-01-12, 2023-01-22, 2023-01-23, 2023-01-24, 2023-01-25, 2023-01-29"
+warning,missing values,251,Transfers out of CBP custody: 251 missing values (kept as missing).,"2023-01-12, 2023-01-22, 2023-01-23, 2023-01-24, 2023-01-25, 2023-01-29"
+warning,reporting frequency,456,"929 reporting dates cover 1385 calendar days (67%); 456 calendar days have no record. Reports fall on Sunday (171), Monday (190), Tuesday (192), Wednesday (187), Thursday (187), Friday (2). Missing days are not treated as zero activity.",
+warning,coverage gaps,7,7 gaps of 5+ days between reports (longest 10 days).,"2023-01-22, 2023-03-07, 2023-08-16, 2024-08-27, 2025-05-27, 2025-06-17"
+warning,possible carry-forward,7,7 records repeat the previous report's HHS care and discharge values exactly (possible stale snapshot).,"2024-01-08, 2024-02-26, 2024-06-25, 2025-03-27, 2025-05-14, 2026-03-23"
+info,schema,0,Header(s) carry footnote markers whose footnote text is not included in the file: Children apprehended and placed in CBP custody*. Column definitions cannot be confirmed from the file.,
+info,ordering,0,File is ordered descending (newest first); records were sorted chronologically.,
+info,coincidental matches,30,30 records match another date on CBP values only as isolated short runs; treated as coincidence and kept.,
+info,stock-flow reconciliation,0,"On one-day gaps without suspect values, HHS care reconciles closely (median |residual| 4.0); CBP custody does not (median |residual| 10.0, mean +22.7), indicating undocumented CBP exits, entries or snapshot-timing differences.",
