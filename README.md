@@ -37,7 +37,7 @@ uac-care-pipeline-analytics/
 │   ├── bottleneck_detection.py rule-based pressure episodes, anomalies
 │   ├── trend_analysis.py      weekday index, trend tests, level shifts, stability
 │   └── visualizations.py      Plotly figures (shared by app and report export)
-└── Ankit_Chand_Final_Internship_Project_Report.pdf           Final report of full output tables
+└── Ankit_Chand_Research_Paper.pdf           Final report of full output tables
 ```
 
 ## Dashboard
@@ -100,4 +100,4 @@ Dashboard threshold controls override `BottleneckConfig` for the session. The in
 | Requested deliverable | Location |
 |---|---|
 | Python project, dashboard | `src/`, `app.py` |
-| Final Report | [Ankit_Chand_Final_Internship_Project_Report.pdf](Ankit_Chand_Final_Internship_Project_Report.pdf) |
+| Final Report | [Ankit_Chand_Research_Paper.pdf](Ankit_Chand_Research_Paper.pdf) |
